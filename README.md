@@ -1,4 +1,4 @@
-# genai-final-assignment
+# EnCodec Streaming Reconstruction - Generative AI Final Assignment
 
 ## Installation
 
