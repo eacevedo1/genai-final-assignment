@@ -1,14 +1,29 @@
+"""
+Device selection utility.
+
+Helpers
+-------
+  get_device : Return the best available PyTorch accelerator as a string.
+"""
+
 import torch
 
 
-def resolve_device(device_name: str) -> torch.device:
-    if device_name == "auto":
-        if torch.cuda.is_available():
-            return torch.device("cuda")
-        if (
-            getattr(torch.backends, "mps", None) is not None
-            and torch.backends.mps.is_available()
-        ):
-            return torch.device("mps")
-        return torch.device("cpu")
-    return torch.device(device_name)
+# ---------------------------------------------------------------------------
+# Public helpers
+# ---------------------------------------------------------------------------
+
+def get_device() -> str:
+    """
+    Select the best available accelerator in priority order: CUDA, MPS, CPU.
+
+    Returns
+    -------
+    str
+        One of ``"cuda"``, ``"mps"``, or ``"cpu"``.
+    """
+    if torch.cuda.is_available():
+        return "cuda"
+    if torch.backends.mps.is_available():
+        return "mps"
+    return "cpu"
