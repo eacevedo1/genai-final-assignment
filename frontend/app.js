@@ -19,11 +19,47 @@ function loadManifest() {
         "code": "002012",
         "original": "examples/002012.mp3",
         "chunks": {
+          "0.25": {
+            "raw": "examples/002012__chunk0.25s__raw.wav",
+            "ema_linear_a0.30": "examples/002012__chunk0.25s__ema_linear_a0.30.wav",
+            "ema_log_a0.30": "examples/002012__chunk0.25s__ema_log_a0.30.wav",
+            "gru": "examples/002012__chunk0.25s__gru.wav"
+          },
           "0.5": {
             "raw": "examples/002012__chunk0.50s__raw.wav",
             "ema_linear_a0.30": "examples/002012__chunk0.50s__ema_linear_a0.30.wav",
             "ema_log_a0.30": "examples/002012__chunk0.50s__ema_log_a0.30.wav",
             "gru": "examples/002012__chunk0.50s__gru.wav"
+          },
+          "1.0": {
+            "raw": "examples/002012__chunk1.00s__raw.wav",
+            "ema_linear_a0.30": "examples/002012__chunk1.00s__ema_linear_a0.30.wav",
+            "ema_log_a0.30": "examples/002012__chunk1.00s__ema_log_a0.30.wav",
+            "gru": "examples/002012__chunk1.00s__gru.wav"
+          }
+        }
+      },
+      {
+        "code": "002097",
+        "original": "examples/002097.mp3",
+        "chunks": {
+          "0.25": {
+            "raw": "examples/002097__chunk0.25s__raw.wav",
+            "ema_linear_a0.30": "examples/002097__chunk0.25s__ema_linear_a0.30.wav",
+            "ema_log_a0.30": "examples/002097__chunk0.25s__ema_log_a0.30.wav",
+            "gru": "examples/002097__chunk0.25s__gru.wav"
+          },
+          "0.5": {
+            "raw": "examples/002097__chunk0.50s__raw.wav",
+            "ema_linear_a0.30": "examples/002097__chunk0.50s__ema_linear_a0.30.wav",
+            "ema_log_a0.30": "examples/002097__chunk0.50s__ema_log_a0.30.wav",
+            "gru": "examples/002097__chunk0.50s__gru.wav"
+          },
+          "1.0": {
+            "raw": "examples/002097__chunk1.00s__raw.wav",
+            "ema_linear_a0.30": "examples/002097__chunk1.00s__ema_linear_a0.30.wav",
+            "ema_log_a0.30": "examples/002097__chunk1.00s__ema_log_a0.30.wav",
+            "gru": "examples/002097__chunk1.00s__gru.wav"
           }
         }
       }
