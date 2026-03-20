@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EnCodec Streaming Reconstruction — Audio Examples</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>EnCodec Streaming Reconstruction</h1>
+    <p>
+      Listen to chunk-based streaming reconstructions using four methods:
+      raw overlap-add, EMA linear/log scale smoothing, and GRU-predicted scale.
+    </p>
+  </header>
+
+  <!-- Legend -->
+  <div class="legend">
+    <div class="legend-item">
+      <div class="legend-dot" style="background:var(--tag-orig)"></div>
+      <span>Original</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-dot" style="background:var(--tag-raw)"></div>
+      <span>Raw OLA</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-dot" style="background:var(--tag-emal)"></div>
+      <span>EMA Linear (α = 0.30)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-dot" style="background:var(--tag-emag)"></div>
+      <span>EMA Log (α = 0.30)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-dot" style="background:var(--tag-gru)"></div>
+      <span>GRU Predicted</span>
+    </div>
+  </div>
+
+  <!-- Track selector -->
+  <div class="selector-bar">
+    <label for="track-select">Track</label>
+    <select id="track-select"></select>
+  </div>
+
+  <!-- Main display -->
+  <div id="track-display">
+    <div class="status-msg">Loading examples…</div>
+  </div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>

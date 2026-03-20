@@ -1,0 +1,16 @@
+{
+  "tracks": [
+    {
+      "code": "002012",
+      "original": "examples/002012.mp3",
+      "chunks": {
+        "0.5": {
+          "raw": "examples/002012__chunk0.50s__raw.wav",
+          "ema_linear_a0.30": "examples/002012__chunk0.50s__ema_linear_a0.30.wav",
+          "ema_log_a0.30": "examples/002012__chunk0.50s__ema_log_a0.30.wav",
+          "gru": "examples/002012__chunk0.50s__gru.wav"
+        }
+      }
+    }
+  ]
+}
