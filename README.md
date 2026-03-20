@@ -19,6 +19,17 @@ Dependencies: `torch`, `torchaudio`, `encodec`, `descript-audio-codec`, `soundfi
 
 ---
 
+## Data
+
+This project uses the [FMA (Free Music Archive)](https://github.com/mdeff/fma) dataset. Download the `fma_small` subset (~7.2 GB) with:
+
+```bash
+curl -O https://os.unil.cloud.switch.ch/fma/fma_small.zip
+unzip fma_small.zip -d data/fma_small
+```
+
+---
+
 ## streaming.py
 
 Command-line script that encodes an audio file with EnCodec in a streaming (chunk-by-chunk) fashion, reconstructs it via overlap-add synthesis, and compares the result against a full (non-streaming) reconstruction.
