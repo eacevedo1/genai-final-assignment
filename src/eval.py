@@ -142,10 +142,10 @@ def print_results(results: list, reference_label: str = "GT baseline"):
     col_w = 22
     header = (
         f"{'Method':<{col_w}}"
-        f"{'SI-SDR (dB)':>14}"
-        f"{'SNR (dB)':>12}"
-        f"{'L1 error':>12}"
-        f"{'MSE':>14}"
+        f"{'SI-SDR↑ (dB)':>14}"
+        f"{'SNR↑ (dB)':>12}"
+        f"{'L1 error↓':>12}"
+        f"{'MSE↓':>14}"
     )
     sep = "-" * len(header)
 
